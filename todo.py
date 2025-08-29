@@ -18,11 +18,14 @@ def view_tasks():
 
 # Step 4: Delete a task
 def delete_task(index):
+    print('deleting ' + str(tasks[index]) + '...')
     tasks.remove(tasks[index])
 
 # Step 5: Mark task complete
 def mark_complete(index):
+    print("marking " + str(tasks[index]) + " as complete...")
     tasks[index] = (tasks[index] + "✅")
+
 
 # Step 6: Save/load tasks (extra stretch for today)
 
